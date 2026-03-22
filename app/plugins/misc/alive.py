@@ -75,12 +75,13 @@ if _bot.is_bot:
 async def get_alive_text() -> str:
     user_info = await bot.get_users(user_ids=Config.OWNER_ID)
     return (
-        f"<b><a href='{Config.UPSTREAM_REPO}'>Plain-UB</a></b>, "
-        f"A simple Telegram User-Bot by Meliodas.\n"
-        f"\n › User            :   <code>{user_info.first_name}</code>"
-        f"\n › Python        :   <code>v{PY_VERSION}</code>"
-        f"\n › Pyrogram   :   <code>v{pyro_version}</code>"
-        f"\n › Core            :   <code>v{core_version}</code>"
+        f"⚡ <b>SCREAM USERBOT</b> ⚡\n"
+        f"━━━━━━━━━━━━━━━\n"
+        f"\n 👤 User         :   <code>{user_info.first_name}</code>"
+        f"\n 🐍 Python    :   <code>v{PY_VERSION}</code>"
+        f"\n 💜 Pyrogram :   <code>v{pyro_version}</code>"
+        f"\n ⚙️ Core         :   <code>v{core_version}</code>"
+        f"\n━━━━━━━━━━━━━━━"
     )
 
 
