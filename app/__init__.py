@@ -15,3 +15,5 @@ threading.Thread(
     target=lambda: HTTPServer(("0.0.0.0", PORT), Handler).serve_forever(),
     daemon=True
 ).start()
+
+from ub_core import BOT, LOGGER, Config, Convo, CustomDB, Message, bot
