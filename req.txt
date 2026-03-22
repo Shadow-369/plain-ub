@@ -1,3 +1,4 @@
+pyrogram==2.0.106
 # BoilerPlate Code for UB
 # git+https://github.com/thedragonsinn/ub-core.git
 # moved to scripts/install_ub_core.sh
