@@ -1,3 +1,4 @@
+import os
 import threading
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
@@ -9,9 +10,8 @@ class Handler(BaseHTTPRequestHandler):
     def log_message(self, format, *args):
         pass
 
+PORT = int(os.environ.get("PORT", 8080))
 threading.Thread(
-    target=lambda: HTTPServer(("0.0.0.0", 8080), Handler).serve_forever(),
+    target=lambda: HTTPServer(("0.0.0.0", PORT), Handler).serve_forever(),
     daemon=True
 ).start()
-
-from ub_core import BOT, LOGGER, Config, Convo, CustomDB, Message, bot
